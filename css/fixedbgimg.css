@@ -1,0 +1,30 @@
+body { 
+    background-image: url('https://s-media-cache-ak0.pinimg.com/736x/78/d5/0e/78d50e00fe2edc2af4a74a16773ad147.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.navbar-brand
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin:0 auto;
+    font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+	font-size: 30px;
+}
+.navbar-toggle {
+    z-index:3;
+}
+
+.btn-margin-left {
+    margin-left: 100px;
+	font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+	font-size: 21px;
+}
+.btn-margin-right {
+    margin-right: 100px;
+    font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+	font-size: 21px;
+}
