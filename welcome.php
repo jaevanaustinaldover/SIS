@@ -1,7 +1,7 @@
 <?php
 	
-	if(isset($_POST['register']))
-	{
+	//if(isset($_POST['register']))
+	//{
 		$studentNo = $_POST['sid'];
 		$lastName = $_POST['ln'];
 		$firstName = $_POST['fn'];
@@ -9,7 +9,7 @@
 		$password = $_POST['pwd'];
 		$birthDate= $_POST['bday'];
 
-		echo "Welcome, " . $firstName . " " . $lastName . "!<br/>" .
+		/*echo "Welcome, " . $firstName . " " . $lastName . "!<br/>" .
 		"Your ID number is " . $studentNo .
 		". <br/>
 		Your email address is " . $emailAdress .
@@ -23,7 +23,7 @@
 	else
 	{
 		//header('location: register.php');
-	}
+	}*/
 ?>
 
 <!DOCTYPE html>
@@ -31,7 +31,9 @@
 	<head>
 		<title>Home Page</title>
 		<link href="css/bootstrap.min.css" rel="stylesheet" />
-		<link href="css/fixedbgimg.css" type=text/css rel="stylesheet" />
+		<link href="css/fixedbgimg.css" type=text/css rel="stylesheet"/>
+		<link rel="stylesheet" type="text/css" href="css/style6.css" />
+		<script src="js/modernizr.custom.63321.js"></script>
 	</head>
 	<body>
 		   <!-- Static navbar -->
@@ -44,15 +46,16 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="#">Hello Sir/Mam
+          </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active btn-margin-left"><a href="#">Home</a></li>
+            <li class="active btn-margin-left iEffect"><a href="#">Home</a></li>
             <li class="btn-margin-left"><a href="#about">About</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li class="btn-margin-right"><a href="#contact">Contact</a></li>
+            <li class="btn-margin-right iEffect"><a href="#contact">Contact</a></li>
             <li class="dropdown btn-margin-right">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -68,10 +71,36 @@
           </ul>
         </div><!--/.nav-collapse -->
       </div>
-
-
     </nav>
+
+
+
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.dropdown.js"></script>
+	<script type="text/javascript">
+			
+			$( function() {
+				
+				$( '#cd-dropdown' ).dropdown( {
+					gutter : 5,
+					stack : false,
+					delay : 100,
+					slidingIn : 100
+				} );
+
+			});
+
+	</script>
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+   	 	$(".iEffect").hover(function(){
+        $(this).css("background-color", "yellow");
+        }, function(){
+        $(this).css("background-color", "pink");
+    });
+	</script>
 	</body>
 </html>
