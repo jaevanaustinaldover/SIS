@@ -17,6 +17,7 @@
 	<head>
 		<title>Student Registration</title>
 		<link href="css/bootstrap.min.css" rel="stylesheet" />
+		<link href="css/fixedbgimg.css" type=text/css rel="stylesheet" />
 	</head>
 	<body>
 		<div class="container">
@@ -77,7 +78,37 @@
 								<button name="register" class="btn btn-success">Register</button>
 							</div>
 						</div>
-
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
 					</form>
 				</div>
 			</div>
