@@ -22,6 +22,18 @@
     background-attachment: fixed;
     background-size:cover;
 }
+#b5 { 
+    background-image: url('https://themanansala.files.wordpress.com/2014/06/dsc_0256-1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+}
+#b6 { 
+    background-image: url('http://pre07.deviantart.net/fef4/th/pre/f/2013/212/1/e/benildeat252_by_lightningdynamo-d6g01f3.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+}
 
 .navbar-brand
 {
@@ -85,5 +97,14 @@
 
 .MyFont{
     font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
-    font-size: 23px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.navbar{
+    background-color: black;
+}
+
+.bgblack{
+    background-color: black;
 }

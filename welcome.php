@@ -32,7 +32,7 @@
 		<title>Home Page</title>
 		<link href="css/bootstrap.min.css" rel="stylesheet" />
 		<link href="css/fixedbgimg.css" type=text/css rel="stylesheet"/>
-		<link rel="stylesheet" type="text/css" href="css/style6.css" />
+		<link rel="stylesheet" type="text/css" href="css/style2.css" />
 		<link rel="stylesheet" type="text/css" href="http://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/css/demo.css">
 		<script src="js/modernizr.custom.63321.js"></script>
 		<meta charset="utf-8"> 
@@ -60,15 +60,15 @@
           <ul class="nav navbar-nav navbar-right">
             <li class="btn-margin-right iEffect"><a href="#contact">Contact</a></li>
             <li class="dropdown btn-margin-right">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
+                <li><a href="#">My Profile</a></li>
+                <li><a href="#">Edit Account</a></li>
+                <li><a href="#">Account Privacy</a></li>
                 <li role="separator" class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
+                <li class="dropdown-header"></li>
+                <li><a href="#">Log Out</a></li>
+                <li><a href="#">Deactivate Account</a></li>
               </ul>
             </li>
           </ul>
@@ -80,7 +80,7 @@
 
     <div class="col-lg-offset-1 col-lg-8">
     	<div class="blog-header">
-        <h1 class="blog-title Main-Post">
+        <h1 class="blog-title Main-Post"><strong>
         	<?php
         		if(isset($_POST['register']))
 				{
@@ -91,12 +91,13 @@
 					header('location: register.php');
 				}
         	?>
+        	</strong>
         </h1>
         <p class="lead blog-description"><strong> 
         	<?php
         		date_default_timezone_set('Asia/Manila');
 				$date = date('m/d/Y h:i:s a', time());
-				echo "It is currently " . $date
+				echo "It is currently " . $date . " PHT"
         	?></strong>
         </p>
       </div>
@@ -158,6 +159,38 @@
       </div>
     </div>
 
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+    <div class="col-lg-3">
+    	<div class="fleft">
+			<select id="cd-dropdown" class="cd-select">
+				<option value="-1" selected>Choose a network to add</option>
+				<option value="1" class="icon-google-plus">Google Plus</option>
+				<option value="2" class="icon-facebook">Facebook</option>
+				<option value="3" class="icon-twitter">Twitter</option>
+				<option value="4" class="icon-github">GitHub</option>
+			</select>
+		</div>
+      </div>
+
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
@@ -185,8 +218,21 @@
     	var swap = window.setInterval(func, interval);
 		}
 
-		run(3000, 4); //milliseconds, frames
+		run(4000, 6); //milliseconds, frames
 	</script>
+	<script type="text/javascript">
+			
+			$( function() {
+				
+				$( '#cd-dropdown' ).dropdown( {
+					gutter : 5,
+					delay : 100,
+					random : true
+				} );
+
+			});
+
+		</script>
 	<script src="http://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/EasePack.min.js" type="text/javascript"></script>
 	</body>
 </html>
